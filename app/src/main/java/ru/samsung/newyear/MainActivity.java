@@ -18,7 +18,7 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
     public int screenWidth, screenHeight;
     ImageView ded;
-    Snowflake[] sf = new Snowflake[10];
+    Snowflake[] sf = new Snowflake[75];
     Handler handler;
     long startTime;
 
@@ -46,11 +46,11 @@ public class MainActivity extends AppCompatActivity {
 
         Random rand = new Random();
 
-        /*for (int i = 0; i < sf.length; i++) {
+        for (int i = 0; i < sf.length; i++) {
             sf[i] = new Snowflake(constraintLayout, screenWidth, screenHeight);
-        }*/
+        }
 
-        Snowflake test = new Snowflake()
+        //Snowflake test = new Snowflake(constraintLayout, screenWidth, screenHeight, rand.nextInt(screenWidth), -50);
         update();
     }
 
