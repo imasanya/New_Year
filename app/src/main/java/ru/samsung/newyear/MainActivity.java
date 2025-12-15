@@ -18,7 +18,7 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
     public int screenWidth, screenHeight;
     ImageView ded;
-    Snowflake[] sf = new Snowflake[75];
+    Snowflake[] sf = new Snowflake[100];
     Handler handler;
     long startTime;
 

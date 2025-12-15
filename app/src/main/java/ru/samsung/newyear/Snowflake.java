@@ -60,10 +60,11 @@ public class Snowflake {
         if (img.getY() < screenHeight){
             img.setY(img.getY()+speed);
         }
-        else if(img.getY() > screenHeight){
-            img.setY(-rand.nextInt(screenHeight)-100);
+        else if(img.getY() >= screenHeight){
+            img.setY(-rand.nextInt(screenHeight));
             img.setX(rand.nextInt(screenWidth));
         }
+        System.out.println(img.getY());
     }
 
 
